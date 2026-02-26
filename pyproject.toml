@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pymarq"
+version = "0.1.0"
+description = "Python library for controlling ViewMarq LED displays over Modbus TCP"
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+
+[project.urls]
+Homepage = "https://github.com/carterprince/pymarq"
+Repository = "https://github.com/carterprince/pymarq"
