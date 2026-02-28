@@ -1,6 +1,8 @@
 # pymarq
 
-A simple Python library for interacting with [ViewMarq](https://www.automationdirect.com/adc/shopping/catalog/operator_interfaces/viewmarq_led_message_displays) LED message displays over Modbus TCP.
+![pymarq](/pymarq.svg)
+
+A simple Python library for interacting with [ViewMarq](https://www.automationdirect.com/adc/overview/catalog/hmi_(human_machine_interface)/message_displays/message_displays) LED message displays over Modbus TCP.
 
 ## Installation
 
