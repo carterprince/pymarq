@@ -34,6 +34,10 @@ display.write("WARNING", color=ViewMarq.RED)
 display.write("OK", color=ViewMarq.GREEN)
 display.write("CAUTION", color=ViewMarq.AMBER)
 
+# Rich text with inline formatting (per-character/word colors and blinking)
+display.write_rich("<RED>W<AMB>A<GRN>R<RED>N<AMB>I<GRN>N<RED>G")
+display.write_rich("System: <RED><BL F>FAULT<BL N><GRN> - Check Engine")
+
 # Per-line control: scroll, direction, speed, and color
 display.write_lines([
     "Static Header",
@@ -68,6 +72,12 @@ Creates a display connection. `port` defaults to 502 (standard Modbus TCP).
 ### `write(content, color="")`
 
 Sends text to the display. `content` can be a plain string, a newline-delimited string, or a list of strings. Each item/line is positioned on a separate row (8px apart by default).
+
+---
+
+### `write_rich(content)`
+
+Sends text to the display allowing inline ViewMarq formatting tags for per-character or per-word styling. Automatically parses known tags (e.g., `<RED>`, `<GRN>`, `<BL F>`, `<CS 2>`) and wraps the remaining text appropriately. Supports multi-line strings.
 
 ---
 
